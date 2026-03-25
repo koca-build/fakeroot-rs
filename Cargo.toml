@@ -1,0 +1,13 @@
+[package]
+name = "fakeroot-rs"
+version = "0.1.0"
+edition = "2024"
+description = "A Rust-native fakeroot implementation using Linux user namespaces"
+license = "MIT"
+repository = "https://github.com/koca-build/fakeroot-rs"
+readme = "README.md"
+
+[dependencies]
+anyhow = "1.0.102"
+libc = "0.2.183"
+nix = { version = "0.31.2", features = ["user", "process", "sched"] }
